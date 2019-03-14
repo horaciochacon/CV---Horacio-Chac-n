@@ -1,0 +1,98 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+% moderncv themes
+\moderncvstyle{casual}
+\moderncvcolor{blue}                               
+\usepackage[utf8]{inputenc}                       
+\usepackage[scale=0.75]{geometry}
+
+% personal data
+\name{Horacio}{Chacón Torrico}
+\title{MD | Biomedical Informatics (Msc.) }                              
+\address{Av. República de Panamá 257 Barranco}{Lima,Peru}
+\phone[mobile]{+51~996~061~993}    
+\phone[fixed]{+51~(1)~693~5905} 
+\email{horacio.chacon.t@upch.pe | horaciochacon89@gmail.com}
+\social[linkedin]{horacio-chacón-torrico} 
+\social[twitter]{horacio89}
+\social[github]{horaciochacon}                 
+\photo[64pt][0.4pt]{Imagen}                  
+            
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+\makecvtitle
+
+\section{Education}
+\cventry{2017--2019}{Msc(c)}
+{Universidad Peruana Cayetano Heredia}{Lima}{}{Biomedical informatics in Global Health}
+\cventry{2008--2015}{MD}
+{Universidad Científica del Sur}{Lima}{}{Medical School}  
+
+\section{Experience}
+\subsection{Work Experience}
+\cventry{2017--2019}{Researcher / Tecnology director}
+{Universidad Peruana Cayetano Heredia}{Lima, Peru}{}
+{Mamás del Río: mHealth solution for Community health workers intervention was designed and piloted for a rural setting (Amazon rainforest)}
+\cventry{2016}{Researcher / Grant writer}
+{Universidad Peruana Cayetano Heredia}{Lima, Peru}{}{Mamás del Río: Intervention conception and grant proposals were writen and financing was achieved (Grand Challeges Canada and CONCYTEC)} 
+\cventry{2016-2017}{Consultant}
+{Ministry of Health}{Lima, Peru}{}
+{Evaluation and training of quality of registry in death certificate records for the improvement of the national death statistics} 
+\cventry{2015}{Consultant}
+{National Institute of Health}{Lima, Peru}{}
+{Research assistance and information management for the design of the Public Health Laboratory Information System (NetLab V2.0)} 
+\cventry{2015-2016}{Medical data analyst}
+{Sociedad Operadora de Salud}{Lima, Peru}{}{In charge of data analysis, processing and interpreting from Electronic health records from more than 500 000 patients in two tertiary health facilities.} 
+\subsection{Experience Abroad}
+\cventry{2012}{Research Exchange}{TU-Dresden  Smell \& Taste Clinic}{Dresden, Germany}{}{Research exchange with Dr. Thomas Hummal in the smell and taste clinic where, neurophisiology, clinical research and basic research was introduced}
+\newpage
+
+\section{Awards}
+\cventry{2018}{Scholarship}{Centro Latinoamericano de Formación Interdisciplinaria}{Buenos Aires, Argentina}{}{A full cost scholarship was awarded for the 2 week course: "Health and enviroment: integrating spatio-temporal phenomena by means of a frecuentist and bayesian approach}
+\cventry{2016}{Awarded}{Global Innovation through science and technology demo day - 2nd place}{VentureWell and US department of state}{}{Second place by pitching the Mamás del Río mHealth innovation}
+
+\nocite{*}
+\bibliographystyle{unsrt}
+\bibliography{publications}                     
+
+\section{Computer skills}
+\cvdoubleitem{\textbf{Advanced}}{SPSS, R, Markdown}{\textbf{Intermediate}}{GIS, STATA, SQL, \LaTeX, Git}
+\cvdoubleitem{\textbf{Basic}}{Bash, Linux, Html, CSS}{\textbf{Others}}{Reference Managers}
+
+\section{Languages}
+\cvitemwithcomment{Spanish}{Fluent}{Native speker}
+\cvitemwithcomment{English}{Advanced}{Read, writen, spoken}
+\cvitemwithcomment{German}{Intermediate, Spachdiplon I \& II, B2.2}{Read, spoken}
+
+
+\section{References}
+\begin{cvcolumns}
+  \cvcolumn{}{\textbf{Magaly Blas, MD, MPH, PhD}\\ University of Washington \\ Cayetano Heredia  University \\ \emailsymbol \href{mailto:magaly.blas@upch.pe}{magaly.blas@upch.pe}}
+  
+  \cvcolumn{}{\textbf{Akram Hernández, MD}\\ Cayetano Heredia  University \\ San Ignacio de Loyola Univesity \\ \emailsymbol \href{mailto:akram.hernandez.v@upch.pe}{akram.hernandez.v@upch.pe}}
+  
+\end{cvcolumns}
+
+
+
+\end{document}
+
