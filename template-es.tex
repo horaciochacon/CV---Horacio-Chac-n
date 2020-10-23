@@ -1,131 +1,123 @@
-%% Inicio del archivo `template-es.tex'.
-%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License version 1.3c,
 % available at http://www.latex-project.org/lppl/.
 
+\documentclass[10pt,a4paper,sans]{moderncv}
+% moderncv themes
+\moderncvstyle{casual}
+\moderncvcolor{blue}                               
+\usepackage[utf8]{inputenc}                       
+\usepackage[scale=0.85]{geometry}
+\renewcommand{\refname}{Publicaciones}
 
-\documentclass[11pt,a4paper,sans]{moderncv}   % opciones posibles incluyen tamaño de fuente ('10pt', '11pt' and '12pt'), tamaño de papel ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' y 'landscape') y familia de fuentes ('sans' y 'roman')
+% personal data
+\name{Horacio}{Chacón Torrico}
+\title{Médico | Maestro en Informática Biomédica en Salud Global}       
+\address{Av. República de Panamá 257 Barranco}{Lima,Peru}
+\phone[mobile]{+51~996~061~993}    
+\phone[fixed]{+51~(1)~693~5905} 
+\email{horaciochacon89@gmail.com}
+\homepage{horaciochacon.rbind.io}  
+\social[linkedin]{horacio-chacón-torrico} 
+\social[twitter]{horacio89}
+\social[github]{horaciochacon}                 
+\photo[64pt][0.4pt]{imagen}                  
+%            
 
-% temas de moderncv
-\moderncvstyle{casual}                        % las opciones de estilo son 'casual' (por omision),'classic', 'oldstyle' y 'banking'
-\moderncvcolor{blue}                          % opciones de color 'blue' (por omision), 'orange', 'green', 'red', 'purple', 'grey' y 'black'
-%\renewcommand{\familydefault}{\sfdefault}    % para seleccionar la fuente por omision, use '\sfdefault' para la fuente sans serif, '\rmdefault' para la fuente roman, o cualquier nombre de fuente
-%\nopagenumbers{}                             % elimine el comentario para suprimir la numeracion automatica de las paginas para CVs mayores a una pagina
+% to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
 
-% codificacion de caracteres
-\usepackage[utf8]{inputenc}                  % reemplace con su codificacion
-%\usepackage{CJKutf8}                         % si necesita usa CJK para redactar su CV en chino, japones o coreano
-
-% ajustes para los margenes de pagina
-\usepackage[scale=0.75]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}           % si desea cambiar el ando de la columna para las fechas
-
-% datos personales
-\name{John}{Doe}
-\title{T\'itulo del CV (opcional)}                   % dato opcional, elimine la linea si no desea el dato
-\address{calle y n\'umero}{c\'odigo postal y ciudad} % dato opcional, elimine la linea si no desea el dato
-\phone[mobile]{+1~(234)~567~890}                     % dato opcional, elimine la linea si no desea el dato
-\phone[fixed]{+2~(345)~678~901}                      % dato opcional, elimine la linea si no desea el dato
-\phone[fax]{+3~(456)~789~012}                       % dato opcional, elimine la linea si no desea el dato
-\email{john@doe.org}                                 % dato opcional, elimine la linea si no desea el dato
-\homepage{www.johndoe.com}                           % dato opcional, elimine la linea si no desea el dato
-\extrainfo{informacion adicional}                    % dato opcional, elimine la linea si no desea el dato
-\photo[64pt][0.4pt]{picture}                         % '64pt' es la altura a la que la imagen debe ser ajustada, 0.4pt es grosor del marco que lo contiene (eliga 0pt para eliminar el marco) y 'picture' es el nombre del archivo; dato opcional, elimine la linea si no desea el dato
-\quote{Alguna cita (opcional)}                       % dato opcional, elimine la linea si no desea el dato
-
-% para mostrar etiquetas numericas en la bibliografia (por omision no se muestran etiquetas), solo es util si desea incluir citas en en CV
-%\makeatletter
-%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
-%\makeatother
-
-% bibliografia con varias fuentes
-%\usepackage{multibib}
-%\newcites{book,misc}{{Libros},{Otros}}
-%----------------------------------------------------------------------------------
-%            contenido
-%----------------------------------------------------------------------------------
+%-------------------------------------------------------------
+%            content
+%-------------------------------------------------------------
 \begin{document}
-%\begin{CJK*}{UTF8}{gbsn}                     % para redactar el CV en chino usando CJK
-\maketitle
 
-\section{Formaci\'on acad\'emica}
-\cventry{a\~no--a\~no}{Grado}{Instituci\'on}{Ciudad}{\textit{Grade}}{Descripci\'on}  % Los argumentos del 3 al 6 pueden permanecer vacios
-\cventry{a\~no--a\~no}{Grado}{Instituci\'on}{Ciudad}{\textit{Grade}}{Descripci\'on}
+\makecvtitle
 
-\section{Tesis de maestr\'ia}
-\cvitem{t\'itulo}{\emph{T\'itulo}}
-\cvitem{sinodares}{Sinodales}
-\cvitem{descripci\'on}{Una breve descripci\'on de la tesis}
+\section{Educación}
+
+\cventry{2017--2019}{Msc}
+{Universidad Peruana Cayetano Heredia}{Lima}{Peru}{Maestro en Informática Biomédica en Salud Global con Mención en Informática en Salud.}
+\cventry{2008--2015}{MD}
+{Universidad Científica del Sur}{Lima}{Peru}{Médico Cirujano.}  
 
 \section{Experiencia}
-\subsection{Vocacional}
-\cventry{a\~no--a\~no}{t\'itulo del puesto}{Empleador}{Ciudad}{}{Descripci\'on general, no m\'as de 1 \'o 2 l\'ineas.\newline{}%
-Detalle de logros:%
-\begin{itemize}%
-\item Logro 1;
-\item Logro 2, con sub-logros:
-  \begin{itemize}%
-  \item Sub-logro (a);
-  \item Sub-logro (b), con sub-sub-logros (¡evite hacer esto!);
-    \begin{itemize}
-    \item Sub-sub-logro i;
-    \item Sub-sub-logro ii;
-    \item Sub-sub-logro iii;
-    \end{itemize}
-  \item Sub-logro (c);
-  \end{itemize}
-\item Logro 3.
-\end{itemize}}
-\cventry{a\~no--a\~no}{t\'itulo del puesto}{Empleador}{Ciudad}{}{Descripci\'on l\'inea 1\newline{}Descripci\'on l\'inea 2}
-\subsection{Miscel\'aneo}
-\cventry{a\~no--a\~no}{t\'itulo del puesto}{Empleador}{Ciudad}{}{Descripci\'on}
+    \subsection{Experiencia en Investigación}
+        
+        \cventry{2020}{Investigador Asociado}{Universidad Científica del Sur}{Lima, Peru}{}{Plaza de investigador asociado.}
+        
+        \cventry{2020}{\href{https://ctivitae.concytec.gob.pe/appDirectorioCTI/UploadFotoPath.do?tipo=visualizar_archivo_codigo_renacyt&id_investigador=27771&ruta=/documents/renacyt/constancias/P0027771.pdf}{Calificación RENACYT: Maria Rostworoski II}}{CONCYTEC}{Lima, Peru}{}{}
+        
+        \cventry{2016--2020}{Investigador}{Universidad Peruana Cayetano Heredia}{Lima, Peru}{}{
+            \begin{itemize}
+            \item \href{https://www.youtube.com/watch?v=MAzaYVm1VJY&feature=youtu.be}{Adaptación de un aplicativo móvil para el monitoreo y tamizaje poblacional de COVID-19 en Loreto.}
+            \item Mamás del Río: Mejorando la salud materna e infantil en áreas rurales en la Amazonía Peruana.
+            \end{itemize}
+            }
 
-\section{Idiomas}
-\cvitemwithcomment{Idioma 1}{nivel}{Comentario}
-\cvitemwithcomment{Idioma 2}{nivel}{Comentario}
-\cvitemwithcomment{Idioma 3}{nivel}{Comentario}
 
-\section{Conocimientos de computaci\'on}
-\cvdoubleitem{categor\'ia 1}{XXX, YYY, ZZZ}{categor\'ia 4}{XXX, YYY, ZZZ}
-\cvdoubleitem{categor\'ia 2}{XXX, YYY, ZZZ}{categor\'ia 5}{XXX, YYY, ZZZ}
-\cvdoubleitem{categor\'ia 3}{XXX, YYY, ZZZ}{categor\'ia 6}{XXX, YYY, ZZZ}
+    \subsection{Experiencia en Docencia}
+        \cventry{2019--2020}{Docente}
+        {Universidad Cientifica del Sur}{Lima, Peru}{}{}
+        
+    \subsection{Experiencia Laboral}
+        \cventry{2019--2020}{Médico SERUMS}
+        {Posta Médica Escuela de Policía Puente Piedra}{Lima, Peru}{}{}
+        
+        \cventry{2016--2019}{Coordinador y Director Tecnológico}
+        {Universidad Peruana Cayetano Heredia}{Peru}{}
+        {Proyecto Mamás del Río.}
+        
+        \cventry{2016--2017}{Consultor}
+        {Ministerio de Salud - Iniciativa Bloomberg}{Lima, Peru}{}
+        {Evaluación y entrenamiento de nuevo Sistema Nacional de Defunciones (SINADEF).}
+        
+        \cventry{2015}{Consultor}
+        {Instituto Nacional de Salud}{Lima, Peru}{}
+        {Consultoría para la gestión de implementación del sistema informático de laboratorio NetLab versión 2.0.} 
+        
+        \cventry{2015--2016}{Analista Médico}
+        {Sociedad Operadora de Salud}{Lima, Peru}{}{Análisis y procesamiento de información de historias clínicas electrónicas de un complejo hospitalario informatizado.} 
 
-\section{Interests}
-\cvitem{hobby 1}{Descripci\'on}
-\cvitem{hobby 2}{Descripci\'on}
-\cvitem{hobby 3}{Descripci\'on}
+    \subsection{Proyectos}
+        \cventry{2019}{ENDES.PE}{\href{https://github.com/horaciochacon/ENDES.PE}{Desarrollo de paquete para el análisis y manipulación de la ENDES Perú.}}{}{}{}
 
-\section{Extra 1}
-\cvlistitem{Tema 1}
-\cvlistitem{Tema 2}
-\cvlistitem{Tema 3}
+\section{Contribución a Políticas Públicas}
+    \cventry{2017}{Soporte Técnico}{Ministerio de Salud}{Loreto, Peru}{}{\href{ftp://ftp2.minsa.gob.pe/normaslegales/1980/RM_N\%C2\%B0594-2017-MINSA.pdf}{Modelo de Atención de Salud Integral e Intercultural de las Cuencas de los Ríos Tigre, Marañón y Chambira en la Región Loreto 2017 – 2021.}}
 
-\renewcommand{\listitemsymbol}{-~}            % para cambiar el simbolo para las listas
-
-\section{Extra 2}
-\cvlistdoubleitem{Tema 1}{Tema 4}
-\cvlistdoubleitem{Tema 2}{Tema 5\cite{book1}}
-\cvlistdoubleitem{Tema 3}{}
-
-% Las publicaciones tomadas de un archivo de BibTeX sin usar multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\section{Premios y Distinciones}
+    \cventry{2020}{Beca}{Universidad Científica del Sur}{Lima, Perú}{}{Beca Cabieses: concurso de investigador asociado 2020.}
+    
+    \cventry{2018}{Beca curso}{Centro Latinoamericano de Formación Interdisciplinaria}{Buenos Aires, Argentina}{}{Salud y ambiente: integrando fenómenos espacio-temporales bajo un enfoque frecuentista y bayesiano.}
 
 \nocite{*}
-\bibliographystyle{plain}
-\bibliography{publications}                   % 'publications' es el nombre del archivo BibTeX
+\bibliographystyle{unsrt}
+\bibliography{publications}                     
 
-% Las publicaciones tomadas de un archivo BibTeX usando el paquete multibib
-%\section{Publicaciones}
-%\nocitebook{book1,book2}
-%\bibliographystylebook{plain}
-%\bibliographybook{publications}              % 'publications' es el nombre del archivo BibTeX
-%\nocitemisc{misc1,misc2,misc3}
-%\bibliographystylemisc{plain}
-%\bibliographymisc{publications}              % 'publications' es el nombre del archivo BibTeX
+\section{Habilidades Tecnológicas}
+    \cvdoubleitem{\textbf{Advanzado}}{SPSS, R, Markdown}{\textbf{Intermedio}}{GIS, STATA, SQL, \LaTeX, Git}
+    \cvdoubleitem{\textbf{Básico}}{Bash, Linux, Html, CSS}{\textbf{Otros}}{Gestores bibliográficos}
 
-%\clearpage\end{CJK*}                          % si esta redactando su CV en chino usando CJK, \clearpage es requerido por fancyhdr para que funcione correctamente con CJK, aunque esto eliminara la numeracion de pagina al dejar \lastpage como no definido
+\section{Idiomas}
+    \cvitemwithcomment{Español}{Fluido}{Lengua nativa}
+    \cvitemwithcomment{Inglés}{Avanzado, TOEFL iBT (103)}{Escritura, lectura, oral}
+    \cvitemwithcomment{Alemán}{Intermedio, Spachdiplom I \& II, B2.2}{Lectura, oral}
+
+
+\section{Referencias}
+\begin{cvcolumns}
+  \cvcolumn{}{\textbf{Magaly Blas, MD, MPH, PhD}\\ University of Washington \\ Cayetano Heredia  University \\ \emailsymbol \href{mailto:magaly.blas@upch.pe}{magaly.blas@upch.pe}}
+  
+  \cvcolumn{}{\textbf{Joseph Zunt, MD,MPH}\\ Department of Neurology \\ University of Washington \\\emailsymbol \href{mailto:jzunt@uw.edu}{jzunt@uw.edu}}
+  
+\end{cvcolumns}
+
+
+
 \end{document}
 
-
-%% fin del archivo `template-es.tex'.
